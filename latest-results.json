@@ -1,0 +1,151 @@
+{
+  "config": {
+    "configFile": "/home/paki/Desktop/pw-demo/playwright.config.js",
+    "rootDir": "/home/paki/Desktop/pw-demo/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/paki/Desktop/pw-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/paki/Desktop/pw-demo/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "latest-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
+    "version": "1.58.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "changathi-thanglish-to-tamil.spec.js",
+      "file": "changathi-thanglish-to-tamil.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Changathi Thanglish → Tamil",
+          "file": "changathi-thanglish-to-tamil.spec.js",
+          "line": 121,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Pos_Fun_0024",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 60485,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "/home/paki/Desktop/pw-demo/tests/changathi-thanglish-to-tamil.spec.js",
+                            "column": 19,
+                            "line": 39
+                          },
+                          "message": "Error: locator.type: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#transliterateTextarea')\u001b[22m\n\u001b[2m    - locator resolved to <textarea maxlength=\"20480\" name=\"DraftxData\" id=\"transliterateTextarea\"></textarea>\u001b[22m\n\u001b[2m  - elementHandle.type(\"kaariyamaa\")\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m       \u001b[36mawait\u001b[39m input\u001b[33m.\u001b[39mtype(punct\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m30\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     } \u001b[36melse\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m       \u001b[36mawait\u001b[39m input\u001b[33m.\u001b[39mtype(part\u001b[33m,\u001b[39m { delay\u001b[33m:\u001b[39m \u001b[35m80\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     }\n \u001b[90m 41 |\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mif\u001b[39m (nextIsWhitespace) {\u001b[0m\n\u001b[2m    at typeWithTransliteration (/home/paki/Desktop/pw-demo/tests/changathi-thanglish-to-tamil.spec.js:39:19)\u001b[22m\n\u001b[2m    at /home/paki/Desktop/pw-demo/tests/changathi-thanglish-to-tamil.spec.js:147:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-31T10:36:32.056Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/paki/Desktop/pw-demo/test-results/changathi-thanglish-to-tam-1e9de-nglish-→-Tamil-Pos-Fun-0024-chromium/error-context.md"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c6fc438ef1a4f2b89766-04f36034b2c597e3780a",
+              "file": "changathi-thanglish-to-tamil.spec.js",
+              "line": 127,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-31T10:36:21.027Z",
+    "duration": 72444.11800000072,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

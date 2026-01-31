@@ -1,0 +1,19 @@
+{
+  "name": "pw-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=chromium --reporter=list",
+    "test:log": "PW_LOG_CASE_OUTPUT=1 playwright test --project=chromium --reporter=list",
+    "test:all": "playwright test",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.10"
+  }
+}

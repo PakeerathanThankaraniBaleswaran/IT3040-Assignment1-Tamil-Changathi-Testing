@@ -1,0 +1,467 @@
+[
+  {
+    "id": "Pos_Fun_0001",
+    "type": "positive",
+    "testCaseName": "Convert simple greeting",
+    "input": "vanakkam",
+    "expected": "வணக்கம்",
+    "covered": [
+      "Greeting / request / response",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0002",
+    "type": "positive",
+    "testCaseName": "Convert simple question (interrogative)",
+    "input": "epdi irukka?",
+    "expected": "எப்படி இருக்க?",
+    "covered": [
+      "Daily language usage",
+      "Interrogative (question)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0003",
+    "type": "positive",
+    "testCaseName": "Convert present tense sentence",
+    "input": "naan innaiku poren",
+    "expected": "நான் இன்னைக்கு போறேன்",
+    "covered": [
+      "Daily language usage",
+      "Present tense",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0004",
+    "type": "positive",
+    "testCaseName": "Convert past tense sentence",
+    "input": "naan netru veetukku ponen",
+    "expected": "நான் நேற்று வீட்டுக்கு போனேன்",
+    "covered": [
+      "Daily language usage",
+      "Past tense",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0005",
+    "type": "positive",
+    "testCaseName": "Convert future tense sentence (contains check)",
+    "input": "naan naalai varuven",
+    "contains": "நான் நாளை வருவேன்",
+    "covered": [
+      "Daily language usage",
+      "Future tense",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0006",
+    "type": "positive",
+    "testCaseName": "Convert polite request (imperative)",
+    "input": "konjam uthavi pannunga",
+    "expected": "கொஞ்சம் உதவி பண்ணுங்க",
+    "covered": [
+      "Greeting / request / response",
+      "Imperative (command)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0007",
+    "type": "positive",
+    "testCaseName": "Convert imperative with comma",
+    "input": "inga vaanga, ukkaarunga",
+    "expected": "இங்க வாங்க, உக்காருங்க",
+    "covered": [
+      "Daily language usage",
+      "Imperative (command)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0008",
+    "type": "positive",
+    "testCaseName": "Convert informal question",
+    "input": "nee saptacha?",
+    "expected": "நீ சாப்டாச்சா?",
+    "covered": [
+      "Daily language usage",
+      "Interrogative (question)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0009",
+    "type": "positive",
+    "testCaseName": "Convert negation (spoken style)",
+    "input": "naan sapdala",
+    "expected": "நான் சாப்பிடல",
+    "covered": [
+      "Daily language usage",
+      "Negation (negative form)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0010",
+    "type": "positive",
+    "testCaseName": "Convert pronoun + question",
+    "input": "nee enna panra?",
+    "expected": "நீ என்ன பண்ற?",
+    "covered": [
+      "Daily language usage",
+      "Pronoun variation (I/you/we/they)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0011",
+    "type": "positive",
+    "testCaseName": "Convert plural form statement",
+    "input": "naanga naalai santhippom",
+    "expected": "நாங்க நாளை சிந்திப்போம்",
+    "covered": [
+      "Daily language usage",
+      "Plural form",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0012",
+    "type": "positive",
+    "testCaseName": "Convert compound sentence with contrast",
+    "input": "naan varen, aana konjam neram aagum",
+    "expected": "நான் வரேன், ஆனா கொஞ்சம் நேரம் ஆகும்",
+    "covered": [   
+      "Daily language usage",
+      "Compound sentence",
+      "M (31–299 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0013",
+    "type": "positive",
+    "testCaseName": "Convert conditional (complex sentence)",
+    "input": "nee vandhaa naan solluren",
+    "expected": "நீ வந்தா நான் சொல்லுறேன்",
+    "covered": [
+      "Daily language usage",
+      "Complex sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0014",
+    "type": "positive",
+    "testCaseName": "Convert 'what is your name?'",
+    "input": "unga pearu enna?",
+    "expected": "உங்க பேரு என்ன?",
+    "covered": [
+      "Greeting / request / response",
+      "Interrogative (question)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Earlier expected had spelling issue (பெரு vs பேரு)."
+  },
+  {
+    "id": "Pos_Fun_0015",
+    "type": "positive",
+    "testCaseName": "Convert simple need statement",
+    "input": "enakku thanni venum",
+    "expectedAny": [
+      "எனக்கு தண்ணி வேணும்"
+    ],
+    "covered": [
+      "Daily language usage",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0016",
+    "type": "positive",
+    "testCaseName": "Convert polite imperative",
+    "input": "konjam seekiram vaanga",
+    "expected": "கொஞ்சம் சீக்கிரம் வாங்க",
+    "covered": [
+      "Greeting / request / response",
+      "Imperative (command)",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0017",
+    "type": "positive",
+    "testCaseName": "Convert common phrase pattern",
+    "input": "naan veetukku poren",
+    "expected": "நான் வீட்டுக்கு போறேன்",
+    "covered": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0018",
+    "type": "positive",
+    "testCaseName": "Convert repeated word expression",
+    "input": "sari sari, naan pannuren",
+    "contains": "சரி சரி, நான் பண்ணுறேன்",
+    "covered": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Input length is S (≤30), not M."
+  },
+  {
+    "id": "Pos_Fun_0019",
+    "type": "positive",
+    "testCaseName": "Preserve punctuation while converting",
+    "input": "enna daa idhu?!",
+    "expected": "என்ன டா இது?!",
+    "covered": [
+      "Punctuation / numbers",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0020",
+    "type": "positive",
+    "testCaseName": "Preserve multiple spaces",
+    "input": "naan   veetukku   poren",
+    "expected": "நான்   வீட்டுக்கு   போறேன்",
+    "covered": [
+      "Formatting (spaces / line breaks / paragraph)",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ],
+    "notes": "Input length is S (≤30), not M."
+  },
+  {
+    "id": "Pos_Fun_0021",
+    "type": "positive",
+    "testCaseName": "Single line sentence with question",
+    "input": "naan veetukku poren nee varriyaa?",
+  "expected": "நான் வீட்டுக்கு போறேன் நீ வர்றியா?",
+    "covered": [
+    "Daily language usage",
+    "Interrogative (question)",
+    "S (≤30 characters)",
+    "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0022",
+    "type": "positive",
+    "testCaseName": "Convert sentence with common word (work)",
+    "input": "naan velakku poren",
+    "expected": "நான் வேலைக்கு போறேன்",
+    "covered": [
+      "Daily language usage",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+    "id": "Pos_Fun_0023",
+    "type": "positive",
+    "testCaseName": "Place name handling",
+    "input": "naan Colombo la irukken",
+    "expected": "நான் கொலோம்போ ல இருக்கேன்",
+    "covered": [
+      "Names / places / common English words",
+      "Present tense",
+      "S (≤30 characters)",
+      "Accuracy validation"
+    ]
+  },
+  {
+  "id": "Pos_Fun_0024",
+  "type": "positive",
+  "testCaseName": "Long paragraph conversion",
+  "input": "innaiku kaalaiyila naan romba seekiramaa ezhundhen. ezhundha udane manasu konjam amaidhiya irundhuchu. kaalaila mugam kazhuvi konjam neer kudichittu, veetla irundha ellaaraiyum paarthu pesinen. appuram innaiku seiya vendiya velai pathi manasula yosichen. pala nerangal la velai adhigamaa irundhaalum, adhai porumaiyaa seiyanum nu naan enninen. kaalai neram pogapoga velai aarambichadhu. naan oru oru kaariyamaa seidhukondirundhen. sila vishayangal kashtamaa irundhaalum, naan adhai vittu vidala. nadhiyaaga pogum neram maadhiri, neramum pogikitte irundhuchu. madhiyam neram varumbodhu naan romba kalaippaa irundhen. aanaal adhai veliyaa kaattala",
+  "contains": "இன்னைக்கு காலையில நான் ரொம்ப சீக்கிரமா எழுந்தேன்",
+  "covered": [
+    "Formatting (spaces / line breaks / paragraph)",
+    "Present tense",
+    "L (≥300 characters)",
+    "Accuracy validation"
+  ]
+},
+
+  {
+    "id": "Pos_Fun_0025",
+    "type": "positive",
+    "testCaseName": "Empty/cleared input handling",
+    "input": "",
+    "expected": "",
+    "covered": [
+      "Empty/cleared input handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Error handling / input validation"
+    ]
+  },
+
+  {
+    "id": "Neg_Fun_0001",
+    "type": "negative",
+    "testCaseName": "Typo handling: missing letter",
+    "input": "Kala",
+    "expected": "காலை",
+    "covered": [
+      "Typographical error handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0002",
+    "type": "negative",
+    "testCaseName": "Typo handling + grammar noise",
+    "input": "nan vituku poran",
+    "expected": "நான் வீட்டுக்கு போறேன்",
+    "covered": [
+      "Typographical error handling",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0003",
+    "type": "negative",
+    "testCaseName": "Misspelling in verb form",
+    "input": "nan sappiddu varan",
+    "expected": "நான் சாப்பிட்டு வரேன்",
+    "covered": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0004",
+    "type": "negative",
+    "testCaseName": "Numbers + partial English should remain",
+    "input": "ennudaja phone number 9876543210",
+    "expected": "என்னுடைய phone number 9876543210",
+    "covered": [
+      "Punctuation / numbers",
+      "Simple sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0005",
+    "type": "negative",
+    "testCaseName": "Time format + English tokens",
+    "input": "naalai 7.30 AM class irukku",
+    "expected": "நாளை 7.30 AM class இருக்கு",
+    "covered": [
+      "Punctuation / numbers",
+      "Future tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0006",
+    "type": "negative",
+    "testCaseName": "Currency + units",
+    "input": "idhu Rs. 1500, 2 kg arisi",
+    "expected": "இது Rs. 1500, 2 kg அரிசி",
+    "covered": [
+      "Punctuation / numbers",
+      "Simple sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0007",
+    "type": "negative",
+    "testCaseName": "Tech terms embedded",
+    "input": "naan GPU driver update panniten",
+    "expected": "நான் GPU driver update பண்ணிட்டேன்",
+    "covered": [
+      "Mixed Singlish + English",
+      "Past tense",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ]
+  },
+  {
+    "id": "Neg_Fun_0008",
+    "type": "negative",
+    "testCaseName": "Ambiguous short word",
+    "input": "Food",
+    "expected": "உணவு",
+    "covered": [
+      "Word combination / phrase pattern",
+      "Simple sentence",
+      "S (≤30 characters)",
+      "Robustness validation"
+    ],
+    "notes": "Site output may vary; this matches current output."
+  },
+  {
+    "id": "Neg_Fun_0009",
+    "type": "negative",
+    "testCaseName": "Date-time should stay intact",
+    "input": "pay panren 2026-05-21 12:00",
+    "expected": "pay பண்றேன் 2026-05-21 12:00",
+    "covered": [
+      "Punctuation / numbers",
+      "Simple sentence",
+      "M (31–299 characters)",
+      "Robustness validation"
+    ]
+  },
+
+  {
+  "id": "Neg_Fun_0010",
+  "type": "negative",
+  "testCaseName": "Sentence with brackets and quotation marks",
+  "input": "meeting (Zoom) la “start” aaguthu",
+  "expected": "meeting (Zoom) ல “start” ஆகுது",
+  "covered": [
+    "Punctuation / numbers",
+    "Simple sentence",
+    "S (≤30 characters)",
+    "Accuracy validation"
+  ]
+  }
+
+]
